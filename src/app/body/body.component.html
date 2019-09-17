@@ -1,0 +1,4 @@
+<div *ngIf="dadosAPI !== undefined && dadosAPI.results !== undefined && dadosAPI.results.length > 0">
+    <app-list-pokemons *ngFor="let x of dadosAPI.results" [name]="x.name  " [url]="x.url">
+    </app-list-pokemons>
+</div>
